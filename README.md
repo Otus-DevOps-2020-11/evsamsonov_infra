@@ -42,3 +42,9 @@ There were too many requests of a given type :: Error creating new order :: too 
 bastion_IP = 178.154.227.246
 
 someinternalhost_IP = 10.156.0.3
+
+## Деплой тестового приложения
+
+testapp_IP = 178.154.230.232
+
+testapp_port = 9292
