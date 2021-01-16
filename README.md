@@ -48,3 +48,16 @@ someinternalhost_IP = 10.156.0.3
 testapp_IP = 178.154.230.232
 
 testapp_port = 9292
+
+### Дополнительное задание
+```
+yc compute instance create \
+  --name reddit-app2 \
+  --hostname reddit-app2 \
+  --zone ru-central1-a \
+  --memory=4 \
+  --create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=10GB \
+  --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
+  --metadata serial-port-enable=1 \
+  --metadata-from-file user-data=metadata.yaml
+```
