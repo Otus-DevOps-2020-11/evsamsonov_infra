@@ -61,3 +61,24 @@ yc compute instance create \
   --metadata serial-port-enable=1 \
   --metadata-from-file user-data=metadata.yaml
 ```
+
+## Сборка образов VM при помощи Packer
+
+### Что сделано?
+
+- Перенесены скрипты из предыдущего задания в каталог config-scripts
+- Установлен packer
+- Создан сервисный аккаунт и делегированы права
+- Создан файл шаблон ubuntu16.json
+- Созданы скрипты для provisioners install_mongodb.sh и install_ruby.sh
+- Создан образ ВМ с помощью packer
+- Создана ВМ
+- На ВМ установлено приложение reddit-app
+- Параметроризирован шаблон
+- Создан файл пример с параметрами variables.json.examples
+
+### Запуск packer c variables.json
+
+```
+$ packer build -var-file=variables.json ./ubuntu16.json
+```
