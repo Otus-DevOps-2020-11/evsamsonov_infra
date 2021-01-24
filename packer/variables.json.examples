@@ -3,5 +3,6 @@
   "source_image_family": "ubuntu-1604-lts",
   "service_account_key_file": "/path/to/key.json",
   "image_family": "reddit-base",
-  "instance_cores": "2"
+  "instance_cores": "2",
+  "source_image_id": ""
 }
