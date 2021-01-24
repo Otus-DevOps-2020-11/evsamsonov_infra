@@ -76,9 +76,14 @@ yc compute instance create \
 - На ВМ установлено приложение reddit-app
 - Параметроризирован шаблон
 - Создан файл пример с параметрами variables.json.examples
+- Создана конфигурация для bake-образа с reddit-app
 
 ### Запуск packer c variables.json
 
 ```
 $ packer build -var-file=variables.json ./ubuntu16.json
 ```
+
+### Создание bake-образа
+
+Bake-образ построен на основе основного образа. Требуется в variables.json задать source_image_id образа. При попытке указания family образа с помощью ключа source_image_family=reddit-base была ошибка, что образ не найден, хотя образ с таким семейство был в списке
