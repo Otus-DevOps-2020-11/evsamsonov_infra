@@ -11,8 +11,8 @@ provider "yandex" {
 }
 
 resource "yandex_compute_instance" "app" {
-  name = "reddit-app${count.index}"
-  zone = var.app_zone
+  name  = "reddit-app${count.index}"
+  zone  = var.app_zone
   count = var.app_instance_count
   resources {
     cores  = 2
