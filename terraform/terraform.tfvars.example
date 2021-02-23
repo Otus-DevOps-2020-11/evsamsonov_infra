@@ -7,3 +7,4 @@ subnet_id                  = "e9bu7e6cg1bggn4rqlh9"
 service_account_key_file   = "/Users/evgeny/yc/iam/key.json"
 app_connection_private_key = "~/.ssh/appuser"
 app_zone                   = "ru-central1-a"
+app_instance_count         = 2

@@ -27,3 +27,7 @@ variable app_zone {
 variable app_connection_private_key {
   description = "private key .json for VM app connection"
 }
+variable app_instance_count {
+  description = "reddit-app instance count"
+  default     = 1
+}
