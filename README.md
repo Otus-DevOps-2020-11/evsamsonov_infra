@@ -87,3 +87,18 @@ $ packer build -var-file=variables.json ./ubuntu16.json
 ### Создание bake-образа
 
 Bake-образ построен на основе основного образа. Требуется в variables.json задать source_image_id образа. При попытке указания family образа с помощью ключа source_image_family=reddit-base была ошибка, что образ не найден, хотя образ с таким семейство был в списке
+
+## Terraform 1
+
+### Что сделано?
+
+- Установлен terraform требуемой версии
+- Описан provider yandex cloud для terraform
+- Описана виртуальная машина reddit-app
+- Описан блок output
+- Описаны provisioners с деплоем и запуском приложения
+- Определены input переменные и параметризированны конфигурационные файлы terraform
+- Отформатированы terraform файлы с помощью команды terraform fmt
+- Добавлен файл с примерами переменных terraform.tfvars.example
+- Описан load balancer
+- Параметроризированно число инстансов приложения
