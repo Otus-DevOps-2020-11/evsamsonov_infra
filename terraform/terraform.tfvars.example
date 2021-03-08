@@ -8,3 +8,5 @@ service_account_key_file   = "/Users/evgeny/yc/iam/key.json"
 app_connection_private_key = "~/.ssh/appuser"
 app_zone                   = "ru-central1-a"
 app_instance_count         = 2
+app_disk_image             = "fd8c3tlbts38703ggd14"
+db_disk_image              = "fd8gh67m30g1nftibcp2"
