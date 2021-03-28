@@ -1,7 +1,7 @@
 {
   "folder_id": "abc",
   "source_image_family": "ubuntu-1604-lts",
-  "service_account_key_file": "key.json.example",
+  "service_account_key_file": "packer/key.json.example",
   "image_family": "reddit-base",
   "instance_cores": "2",
   "source_image_id": ""
