@@ -7,6 +7,7 @@
   copy:
     src: puma.service
     dest: /etc/systemd/system/puma.service
+    mode: preserve
   notify: reload puma
 
 - name: Add config for DB connection
@@ -15,6 +16,7 @@
     dest: /home/ubuntu/db_config
     owner: ubuntu
     group: ubuntu
+    mode: preserve
 
 - name: Enable puma
   systemd: name=puma enabled=yes
