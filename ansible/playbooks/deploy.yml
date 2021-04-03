@@ -5,7 +5,7 @@
       become: true
       apt:
         name: git
-        state: latest
+        state: recent
         update_cache: yes
 
     - name: Fetch the latest version of application code
